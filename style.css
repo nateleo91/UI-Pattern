@@ -1,0 +1,42 @@
+* {
+  font-family: 'Passions Conflict', cursive;
+}
+
+#modal-container {
+  position:fixed;
+  display:table;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  transform:scale(0);
+  z-index:1;
+}
+
+.title {
+  text-align: center;
+}
+
+.houses {
+  width: 200px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-gap:120px;
+  grid-auto-rows: minmax(100px, auto);
+  position: relative;
+  left: 50%;
+  transform: translateX(-100%);
+}
+
+#Gryffindor:hover {
+  opacity: 1;
+background-position: 50% 50%;
+background-size: 160%;
+background-blend-mode: overlay;
+z-index: 2;
+filter: brightness(1) contrast(1);
+transition: all .33s ease;
+mix-blend-mode: color-dodge;
+opacity: .75;
+}
