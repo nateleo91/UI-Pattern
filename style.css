@@ -40,3 +40,39 @@ transition: all .33s ease;
 mix-blend-mode: color-dodge;
 opacity: .75;
 }
+
+#Slytherin:hover {
+opacity: 1;
+background-position: 50% 50%;
+background-size: 160%;
+background-blend-mode: overlay;
+z-index: 2;
+filter: brightness(1) contrast(1);
+transition: all .33s ease;
+mix-blend-mode: color-dodge;
+opacity: .75;
+}
+
+#HufflePuff:hover {
+opacity: 1;
+background-position: 50% 50%;
+background-size: 160%;
+background-blend-mode: overlay;
+z-index: 2;
+filter: brightness(1) contrast(1);
+transition: all .33s ease;
+mix-blend-mode: color-dodge;
+opacity: .75;
+}
+
+#RavenClaw:hover {
+opacity: 1;
+background-position: 50% 50%;
+background-size: 160%;
+background-blend-mode: overlay;
+z-index: 2;
+filter: brightness(1) contrast(1);
+transition: all .33s ease;
+mix-blend-mode: color-dodge;
+opacity: .75;
+}
