@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal/UI Pattern</title>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');</style>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <!--header-->
+    <h1>Hogwarts Houses</h1>
 
-    <body>
-        <header>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>Modal Menu</title>
-            <link rel="stylesheet" href="style.css">
-        </header>
+    <!--Main page content-->
+    <div class="container">
 
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
-        </style>
+        <!--Main page images-->
+        <div class="imageContainer">
+            <div class="img01">
+                <img id="clickableImg" class="image" src="https://static.wikia.nocookie.net/harrypotter/images/b/b1/Gryffindor_ClearBG.png/revision/latest/scale-to-width-down/1000?cb=20190222162949" alt="Gryffindor">
+            </div>
+            <div class="img02">
+                <img id="clickableImg" class="image" src="https://static.wikia.nocookie.net/harrypotter/images/0/00/Slytherin_ClearBG.png/revision/latest?cb=20161020182557" alt="Slytherin">
+            </div>
+            <div class="img03">
+                <img id="clickableImg" class="image" src="https://static.wikia.nocookie.net/harrypotter/images/0/06/Hufflepuff_ClearBG.png/revision/latest?cb=20161020182518" alt="HufflePuff">
+            </div>
+            <div class="img04">
+                <img id="clickableImg" class="image" src="https://static.wikia.nocookie.net/harrypotter/images/7/71/Ravenclaw_ClearBG.png/revision/latest?cb=20161020182442" alt="RavenClaw">
+            </div>
+        </div>
 
-        <main>
-            <div id="modal-container">
-                <div class="modal-background">
-                    <div class="modal">
-            <h2>house</h2>
-            <p>description</p>
-                    </div>
+        <!--Modal-->
+        <div id="modalBody" class="modal">
+            <div class="modalContent">
+                </div>
+                <div class="modalHouse">
+                    <h2>"A thousand years or more ago,
+                        When I was newly sewn,
+                        There lived four wizards of renown,
+                        Whose name are still well-known"</h2>
+                    <p>— Sorting Hat</p>
+                </div>
+                
+                <!--Close button (X)-->
+                <div class="closeButton">
+                    <span class="closeBtn">&times;</span>
                 </div>
             </div>
-            <div class="content">
-                <h1 class="title">Hogwart's Houses</h1>
-                <div class="houses">
-                  <img id="Gryffindor" class="button" src="https://static.wikia.nocookie.net/harrypotter/images/b/b1/Gryffindor_ClearBG.png/revision/latest/scale-to-width-down/1000?cb=20190222162949" alt="Gryffindor" width="200" height="200"></img>
-                  <img id="Slytherin" class="button" src="https://static.wikia.nocookie.net/harrypotter/images/0/00/Slytherin_ClearBG.png/revision/latest?cb=20161020182557" alt="Slytherin" width="200" height="200"></img>
-                  <img id="HufflePuff" class="button" src="https://static.wikia.nocookie.net/harrypotter/images/0/06/Hufflepuff_ClearBG.png/revision/latest?cb=20161020182518" alt="Hufflepuff" width="200" height="200"></img>
-                  <img id="RavenClaw" class="button" src="https://static.wikia.nocookie.net/harrypotter/images/7/71/Ravenclaw_ClearBG.png/revision/latest?cb=20161020182442" alt="RavenClaw" width="200" height="200"></img>
-                </div>
-              </div>
-        </main>
-        <script>src="script.js"</script>
-    </body>
 
+              
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
